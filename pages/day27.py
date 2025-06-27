@@ -14,7 +14,7 @@ with st.sidebar:
     media_url = st.text_input("미디어 URL", value="https://www.youtube.com/watch?v=vIQQR_yq-8I")
 
 if "data" not in st.session_state:
-    st.session_state.data = Path("data.json").read_text()
+    st.session_state.data = Path("pages/data.json").read_text()
 
 layout = [
     dashboard.Item("editor", 0, 0, 6, 3),
